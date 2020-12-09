@@ -92,6 +92,7 @@
         </div>
 			</div>
 		</div>
+		</div>
         <hr>
 		  <!-- Main Content -->
 		  <div class="container">
@@ -125,7 +126,7 @@
 		<hr>
 		
       		  <!-- Main Content -->
-		  <div class="container">
+<div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
@@ -141,6 +142,9 @@
 		   <p class="post-meta">Relation instance r(R): A set of tuples in R. - r(R) = {t1, t2, ..., tm}, or alternatively
            </p>
         </div>
+		</div>
+		 </div>
+		</div>
   <hr>
 			  <!-- Main Content -->
 		  <div class="container">
@@ -171,6 +175,10 @@
 					   	<p class="post-meta">r(StudentGrade) = { Lee, A, Cheung C }  Dom(Name) x Dom(Grade)
            </p>
         </div>
+		        </div>
+		</div>
+		        </div>
+		
         <hr>
 					  <!-- Main Content -->
 		  <div class="container">
@@ -194,7 +202,7 @@
         </div>
         <hr>
 							  <!-- Main Content -->
-		  <div class="container">
+	<div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
@@ -219,7 +227,10 @@
            </p>
 		   <p>If there are multiple, one is chosen as the primary key
            </p>
-        </div>
+        </div>		       
+		</div>
+		</div>
+		        </div>
         <hr>
 		    <!-- Main Content -->
 		  <div class="container">
@@ -247,6 +258,8 @@
         </div>
 		</div>
 		</div>
+	 </div>
+		
   <hr>
   					  <!-- Main Content -->
 		  <div class="container">
@@ -257,21 +270,49 @@
             </h2>
           <p class="post-meta">A database which conforms to an E-R diagram can be represented by a collection of tables.
            </p>
-			<p class="post-meta">All attribute values are considered atomic. Multivalued and composite attribute values are not allowed in tables, although they are permitted by the E-R diagrams
+			<p class="post-meta">Converting an E-R diagram to a table format is “automatic”.
            </p>
-		   	<p>A special null value is used to represent values that are:
+		   	<p class="post-meta">For each entity set there is a unique table which is assigned the name of the corresponding entity set.
            </p>
-		   	<p class="post-meta">- Not applicable(phone number for a client that has no phone)
-           </p>
-		   	<p class="post-meta">- Missing values(there is a phone number, but we do not know it yet)
-           </p>
-		   	<p class="post-meta">- Not known(we do not know whether there is a phone number or not)
+		   	<p class="post-meta">Each table has a number of columns (generally corresponding to attributes), which have unique names.
            </p>
         </div>
 			</div>
 		</div>
-        <hr>
-  
+		        </div>
+        <hr>  
+  		<!-- Main Content -->
+		  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title">
+			Composite and Multivalued Attributes
+            </h2>
+          <p>
+		  Composite attributes are flattened out by creating a separate attribute for each component attribute
+           </p>
+			<p class="post-meta">- E.g., given entity set customer with composite 	attribute name comprised of first-name and last-	name, the customer table has two attributes:
+           </p>
+		   	<p class="post-meta">name.first_name and name.last_name
+			<p>
+		  A multivalued attribute M of an entity E is represented by a separate table EM
+           </p>
+			<p class="post-meta">- Table EM has attributes corresponding to the primary key of E and an attribute corresponding to multivalued attribute M
+           </p>
+		   	<p class="post-meta">- Example:
+           </p>
+		   	<p class="post-meta">- Multivalued attribute phone-numberof employeeis represented by a table employee-phone(employee-id, phone-number)
+           </p>
+		   	<p class="post-meta">- Each value of the multivalued attribute maps to a separate row of the table EM
+           </p>
+		   	<p class="post-meta">- E.g., an employee with primary key 19444 and phones 23580000, 95555555 maps to two rows: (19444, 23580000) and (19444, 95555555)
+           </p>
+        </div>
+		</div>
+		</div>
+		</div>
+        <hr> 		
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -291,6 +332,7 @@
         </div>
       </div>
     </div>
+	<hr>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
