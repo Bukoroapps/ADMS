@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ADVANCED DATABASE MANAGEMENT SYSTEM</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Relational Model</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">MySQL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Relational Algebra</h1>
+            <span class="subheading"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+
+            <h2 class="post-title">
+              Relational Query Language
+            </h2>
+            <h4 class="post-subtitle">
+              Query languages (QL): Allow retrieval of data from a database
+            </h4>
+          <p class="post-meta">The relational model supports simple, powerful QLs:
+           </p>
+			<p class="post-meta">- Strong formal foundation based on logic
+           </p>
+		   <p class="post-meta">- Allow for much optimization
+           </p>
+            <p style="color:blue;">
+              Query Languages != programming languages!
+            </p>
+			<p class="post-meta">- Qls not expected to be "Turing complete"
+           </p>
+		   <p class="post-meta">- Qls not intended to be used for complex calculations
+           </p>
+		   <p class="post-meta">- Qls support easy and efficient access to large data sets
+        </div>
+        <hr>
+		  <!-- Main Content -->
+		  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title">
+              Formal Relational Query Languages
+            </h2>
+            <h4 class="post-subtitle">
+          Two mathematical Query Languages form the basis for "real" languages(e.g. SQL), and for implementation
+            </h4>
+          <p class="post-meta">- Relational Algebra: Procedural, very useful for representing execution plans
+           </p>
+			<p class="post-meta">- Relational Calculus: Lets users describe what they want, rather than how to compute it (non-Procedural, declarative)
+           </p>
+            <p>
+              Here, we will focus on Algebra:
+            </p>
+			<p class="post-meta">- Understanding Algebra is key to understanding SQL and query processing
+           </p>
+        </div>
+        <hr>
+      		  <!-- Main Content -->
+		  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title">
+           Relational Algebra
+            </h2>
+            <h4 class="post-subtitle">
+          Basic operations
+            </h4>
+          <p class="post-meta">- Project (𝝅) Deletes unwanted columns from relation
+           </p>
+			<p class="post-meta">- Selection (σ) Selects a subset of rows from relation
+           </p>
+		   <p class="post-meta">- Set-difference (-) Finds tuples in table 1, but not in table 2
+           </p>
+		   <p class="post-meta">- Union () Finds tuples that belong to table 1 or table 2
+           </p>
+		   <p class="post-meta">- Cross-product (x) Allows us to combine two relations
+           </p>
+		   <p class="post-meta">- Rename (p) Allows us to rename a relation and/or its attributes
+           </p>
+            <h4 class="post-subtitle">
+       Additional operations
+            </h4>
+			<p class="post-meta">- Intersection, join, division: Not essential, but (very!) useful
+           </p>
+		   <h4 class="post-subtitle">
+         Each operation returns a relation, and operations can be composed
+            </h4>
+		  <h4 class="post-subtitle">
+         Algebra is "closed"
+            </h4>
+          <p class="post-meta">- i.e., an operation on instance(s) returns an instance as a result!
+           </p>
+        </div>
+  <hr>
+  
+  <h2 class="section-heading">Projection πL(R</h2>
+            <img class="img-fluid" src="img/p.png" alt="">
+   <hr>
+     <h2 class="section-heading">Selection σc(R)</h2>
+            <img class="img-fluid" src="img/S.png" alt="">
+	<hr>
+	     <h2 class="section-heading">Selection example</h2>
+            <img class="img-fluid" src="img/A.png" alt="">
+	<hr>
+			  <!-- Main Content -->
+		  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title">
+            Set Operations
+            </h2>
+            <h4 class="post-subtitle">
+      Union, Intersection, Set-Difference
+            </h4>
+          <p class="post-meta">These three operations take two input relations, which must be union-compatible:
+           </p>
+			<p class="post-meta">- Same number of fields
+           </p>
+		   	<p class="post-meta">- Corresponding fields have the same type
+           </p>
+            <p>
+    Output is a single relation (that does not contain duplicates)
+            </p>
+        </div>
+        <hr>
+			     <h2 class="section-heading">Set Operations - Union </h2>
+            <img class="img-fluid" src="img/Pic1.png" alt="">
+		<hr>
+				<h2 class="section-heading">Set Operations - Intersection</h2>
+            <img class="img-fluid" src="img/Pic2.png" alt="">
+		<hr>
+				<h2 class="section-heading">Intersection is NOT a Primitive Operation</h2>
+            <img class="img-fluid" src="img/Pic3.png" alt="">
+		<hr>
+				<h2 class="section-heading">Cartesian Product</h2>
+            <img class="img-fluid" src="img/Pic4.png" alt="">
+		<hr>
+				<h2 class="section-heading">Set Operations - Set Difference</h2>
+            <img class="img-fluid" src="img/Pic5.png" alt="">
+		<hr>
+				<h2 class="section-heading">Join</h2>
+            <img class="img-fluid" src="img/Pic6.png" alt="">
+		<hr>
+				<h2 class="section-heading">Natural Join Example</h2>
+            <img class="img-fluid" src="img/Pic7.png" alt="">
+		<hr>
+				<h2 class="section-heading">0 Join Example </h2>
+            <img class="img-fluid" src="img/Pic8.png" alt="Responsive Image">
+			<br>
+			   <img class="img-fluid" src="img/Pic9.png" alt="">
+		<hr>
+				<h2 class="section-heading">Renaming p</h2>
+            <img class="img-fluid" src="img/Pic10.png" alt="">
+		<hr>
+						<h2 class="section-heading">Division</h2>
+            <img class="img-fluid" src="img/Pic11.png" alt="">
+		<hr>
+		
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Visit My Page </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
